@@ -6,7 +6,7 @@ import org.testng.Assert;
 public class ATMTest {
     private ATM atm;
 
-    // Inisialisasi objek ATM dengan saldo awal sebesar 1000 sebelum setiap metode pengujian
+    // Saldo awal 1000
     @BeforeMethod
     public void setUp() {
         atm = new ATM(1000);

@@ -3,17 +3,17 @@ package com.juaracoding.ujianjf.ujian2;
     public class ATM {
         private double saldo;
 
-        // Konstruktor yang menerima saldo awal
+
         public ATM(double saldoAwal) {
             this.saldo = saldoAwal;
         }
 
-        // Metode untuk melihat saldo saat ini
+        // Lihat saldo
         public double lihatSaldo() {
             return saldo;
         }
 
-        // Metode untuk setor uang
+        // Setor Uang
         public void setorUang(double jumlah) {
             if (jumlah > 0) {
                 saldo += jumlah;
@@ -22,7 +22,7 @@ package com.juaracoding.ujianjf.ujian2;
             }
         }
 
-        // Metode untuk tarik uang
+        // Tarik Uang
         public void tarikUang(double jumlah) {
             if (jumlah >  0 && jumlah <= saldo) {
                 saldo -= jumlah;
